@@ -1,0 +1,25 @@
+name: assessment_app
+description: A Flutter application for assessment purposes.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.0.1
+  equatable: ^2.0.3
+  firebase_auth: ^3.3.3
+  firebase_core: ^1.12.0
+  google_fonts: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
