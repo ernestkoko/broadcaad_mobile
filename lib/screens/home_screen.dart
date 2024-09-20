@@ -15,7 +15,7 @@ class HomeScreen extends StatelessWidget {
         children: [
           Center(
             child: Text(
-              "You are welcome",
+              "You are welcome!",
               textAlign: TextAlign.center,
             ),
           ),
