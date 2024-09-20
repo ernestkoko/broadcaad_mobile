@@ -1,20 +1,14 @@
-import 'package:equatable/equatable.dart';
+part of 'auth_bloc.dart';
 
 abstract class AuthEvent extends Equatable {
   @override
   List<Object> get props => [];
 }
 
-class LoginEvent extends AuthEvent {
-  final String email;
-  final String password;
+class LoginEvent extends AuthEvent {}
 
-  LoginEvent(this.email, this.password);
-}
+class SignUpEvent extends AuthEvent {}
 
-class SignUpEvent extends AuthEvent {
-  final String email;
-  final String password;
+class OnLoginTextChangeEvent extends AuthEvent {}
 
-  SignUpEvent(this.email, this.password);
-}
+class OnSignUpTextChangeEvent extends AuthEvent {}

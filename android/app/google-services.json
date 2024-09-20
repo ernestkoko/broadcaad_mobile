@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "486419681133",
+    "project_id": "my-broadcaad-app",
+    "storage_bucket": "my-broadcaad-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:486419681133:android:34cf2b2cd7ec387eacd464",
+        "android_client_info": {
+          "package_name": "com.example.mobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl63m8ScmlQ_-D5o_1n_rBhqxi9zwK_n8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
