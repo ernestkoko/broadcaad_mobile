@@ -57,7 +57,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
           emailController.text, passwordController.text);
       emit(AuthSuccess());
     } on FirebaseAuthException catch (e) {
-      log(e.runtimeType.toString()+"mm");
+      log(e.runtimeType.toString() + "mm");
       emit(AuthFailure(e.message ?? e.toString()));
     } catch (e) {
       log(e.runtimeType.toString());
@@ -106,7 +106,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       valid = false;
     } else {
       if (!emailController.text.isEmail) {
-        _emailError = "Email can not be empty";
+        _emailError = "Invalid email";
         valid = false;
       } else {
         _emailError = null;
@@ -136,7 +136,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       valid = false;
     } else {
       if (!signUpEmailController.text.isEmail) {
-        _signUpEmailError = "Email can not be empty";
+        _signUpEmailError = "Invalid email";
         valid = false;
       } else {
         _signUpEmailError = null;
@@ -154,7 +154,6 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       } else {
         _signupPasswordError = null;
       }
-
     }
     return valid;
   }
